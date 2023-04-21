@@ -1,0 +1,69 @@
+body {  /*hace referencia a el cuerpo de html*/
+    display: flex; /*Permite hacer que el cuerpo sea como una caja flexible o moldeable*/
+    justify-content: center; /*alinea los elementos de manera horizontal*/
+    align-items: center; /*alinea a los elementos verticalmente*/
+    height: 100vh; /*permite ajustar el tamaño de la pagina al tamaño de la pantalla*/
+    background-image: url('mate.jpg'); /*permite llamar a la imagen de fondo*/
+    background-repeat: no-repeat; /*evita que la imagen se repita en el fondo*/
+    background-size: cover;/*permite que la imagen cubra toda la pantalla*/
+  }
+  
+  .calculator-container { /*hace referencia a la clase mencionada*/
+    width: 400px; /*establece el anchor*/
+    height: 200px; /* establece la altura*/
+    border: 2px solid #999; /*crea el borde con2px de ancho y color gris*/
+    padding: 20px; /*da el espacio de borde interno en div*/
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /*permite crear la sombra*/
+    background-color: #000; /*agrega color de fondo*/
+  }
+  
+  #calculator { /*hace referencia a el id mencionado*/
+    display: flex; /*le da flexibilidad a la caja */
+    flex-direction: column; /*permite que cada elemento se ponga verticalmente*/
+  }
+  
+  #calculator label { /*hace referencia al id mencionado*/
+    margin-bottom: 5px; /*da un espacio de 5px con el elemento inferior*/
+    color: #fff; /*color al texto*/
+    font-weight: bold; /*le da grosor a la letra*/
+  }
+  
+  #calculator input[type="number"] { /*hace referencia al input tipo number*/
+    margin-bottom: 10px; /*da espacio con el elemento inferior*/
+    padding: 5px; /*sirve para dar un espacio en la parte interna del input*/
+    border-radius: 5px; /*sirve para redondear las esquinas*/
+    border: 1px solid #999; /*crea un borde de 1px al input con un color gris*/
+    font-size: 16px; /*le da un tamaño a la letra*/
+    background-color: rgb(209, 224, 175);
+  }
+  
+  #calculator button[type="submit"] { /*hace referencia a los inputs de tipo submit*/
+    background-color: #007bff; /*le da un color de fondo al boton de calcular*/
+    color: #fff; /*le da color a la letra*/
+    padding: 5px 10px;/* le da un margen interno de altura y anchor*/
+    border: none; /*elimina el borde*/
+    border-radius: 5px; /*redondea las esquinas*/
+    font-size: 16px; /*cambia el tamaño de letra*/
+    cursor: pointer; /*cambia el modelo del cursor cuando este pase sobre el boton*/
+  }
+  
+  #calculator button[type="submit"]:hover { /*hace referencia cuando el cursor este sobre el boton*/
+    background-color: #5fdc6e; /*cambia el color de fondo*/
+  }
+  
+  .results-container {/*hace referencia al id mencionado*/
+    display: flex; /*permite que la caja sea flexible*/
+    flex-direction: column;/*hace que los elementos se muestren uno debajo de otro*/
+    align-items: center; /*alinea los elementos de manera vertical*/
+    margin-top: 20px;/*le da un espacio de 20px con el elemento superior*/
+    border: 1px solid #999; /*le da un borde*/
+    background-color: #d8dec6; /*da color de fondo*/
+    padding: 5px; /*crea una distancia del borde interno con los elementos*/
+  }
+  
+  #result { /*hace referencia al id mencionado*/
+    font-size: 16px; /*da el tamaño*/
+    line-height: 1.5; /*cambia el tamaño del texto, en este caso aumenta 1.5 veces*/
+    text-align: center; /*alinea el texto en el centro del contenedor*/
+  }
+  

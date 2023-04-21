@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">  
+    <!-- Establece el título de la página que aparece en la pestaña del navegador -->
+    <title>Calculadora</title>
+    <!-- Enlaza una hoja de estilos css para dar estilo a la página -->
+    <link rel="stylesheet" href="estilo.css">
+    <!--Agrega una foto en la pesta;a del navegador-->
+    <link rel="icon" href="calcu.ico">
+  </head>
+  <body>
+    <!-- Crea un contenedor para la calculadora -->
+    <div class="calculator-container">
+      <!-- Crea un formulario con un id calculator -->
+      <form id="calculator">
+        <!-- Crea una etiqueta de texto que describe el primer número del formulario -->
+        <label for="num1">Primer número:</label>
+        <!-- Crea un campo de entrada de número que requiere que se ingrese un valor -->
+        <input type="number" name="num1" required>
+
+        <!-- Crea una etiqueta de texto que describe el segundo número del formulario -->
+        <label for="num2">Segundo número:</label>
+        <!-- Crea un campo de entrada de número que requiere que se ingrese un valor -->
+        <input type="number" name="num2" required>
+        <!-- Crea un botón de envío que se usa para enviar el formulario -->
+        <button type="submit">Calcular</button>
+      </form>
+    </div>
+    <!-- Crea un contenedor para mostrar los resultados de la calculadora -->
+    <div class="results-container">
+      <!-- Crea un párrafo con un identificador único 'result' que se utiliza para mostrar el resultado de la calculadora -->
+      <p id="result"></p>
+    </div>
+    <!-- Enlaza un archivo de script JavaScript que se ejecuta en la página -->
+    <script src="script.js"></script>
+  </body>
+</html>
